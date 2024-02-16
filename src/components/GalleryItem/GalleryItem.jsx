@@ -1,5 +1,10 @@
 function GalleryItem( {item} ) {
-    return (<>{JSON.stringify(item)}</>);
+    return (
+        <div data-testid="galleryItem">
+            <img src={item.url}/>
+            <p>{item.title}</p>
+        </div>
+    );
 }
 
 export default GalleryItem;
