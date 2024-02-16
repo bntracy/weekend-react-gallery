@@ -1,7 +1,7 @@
 function GalleryItem( {item} ) {
     return (
-        <div data-testid="galleryItem" alt={item.description}>
-            <img src={item.url}/>
+        <div data-testid="galleryItem">
+            <img src={item.url} alt={item.description}/>
             <p>{item.title}</p>
         </div>
     );
