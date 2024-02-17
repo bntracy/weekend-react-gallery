@@ -29,8 +29,8 @@ function GalleryItem( {item, fetchGallery} ) {
                     : <p data-testid="toggle" onClick={togglePic} className="description">{item.description}</p> }
             </div>
             <p className="title">{item.title}</p>
-            <p>Likes: {item.likes}</p>
             <button data-testid="like" onClick={likeItem}>Like</button>
+            <p>Likes: {item.likes}</p>
         </div>
     );
 }
