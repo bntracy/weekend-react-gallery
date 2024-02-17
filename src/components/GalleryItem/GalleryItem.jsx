@@ -30,7 +30,20 @@ function GalleryItem( {item, fetchGallery} ) {
             </div>
             <p className="title">{item.title}</p>
             <button data-testid="like" onClick={likeItem}>Like</button>
-            <p>Likes: {item.likes}</p>
+            <p>
+                { item.likes
+                    ? <>{item.likes}</>
+                    : <>No</> }
+                { (item.likes === 1)
+                    ? <> person likes </>
+                    : <> people like </>
+                }
+                this
+                { item.likes
+                    ? <>!</>
+                    : <> yet.</>
+                }
+            </p>
         </div>
     );
 }
