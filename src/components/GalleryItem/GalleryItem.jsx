@@ -28,7 +28,7 @@ function GalleryItem( {item, fetchGallery} ) {
                     ? <img src={item.url} alt={item.description} data-testid="toggle" onClick={() => togglePic()} />
                     : <p data-testid="toggle" onClick={togglePic} className="description">{item.description}</p> }
             </div>
-            <p>{item.title}</p>
+            <p className="title">{item.title}</p>
             <p>Likes: {item.likes}</p>
             <button data-testid="like" onClick={likeItem}>Like</button>
         </div>
