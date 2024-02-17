@@ -1,9 +1,24 @@
-# Project Name
-
-[Project Instructions](./INSTRUCTIONS.md), this line may be removed once you have updated the README.md
+# React Gallery
 
 ## Description
 
-Your project description goes here. What problem did you solve? How did you solve it?
+A gallery of photos that can be "liked".
 
-Additional README details can be found [here](https://github.com/PrimeAcademy/readme-template/blob/master/README.md).
+### Prerequisites
+
+- [Node.js](https://nodejs.org/en/)
+
+## Installation
+
+1. Create a database named `react-gallery`,
+2. The queries in the `databse.sql` file are set up to create the necessary table and populate the needed data to allow the application to run correctly. The project is built on [Postgres](https://www.postgresql.org/download/), so you will need to make sure to have that installed. We recommend using Postico to run those queries as that was used to create the queries, 
+3. Open up your editor of choice and run an `npm install`
+4. Run `npm run server` in your terminal
+5. Run `npm run client` in your terminal
+6. The `npm run client` command will open up a new browser tab for you!
+
+## Built With
+
+* React
+* Axios
+* Express
