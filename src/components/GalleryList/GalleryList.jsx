@@ -20,7 +20,7 @@ function GalleryList() {
 
     return (
         <div data-testid="galleryList">
-            {galleryArray.map(item => <GalleryItem key={item.id} item={item} />)}
+            {galleryArray.map(item => <GalleryItem key={item.id} item={item} fetchGallery={fetchGallery} />)}
         </div>
     );
 }
