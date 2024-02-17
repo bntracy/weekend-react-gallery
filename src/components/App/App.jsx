@@ -5,7 +5,7 @@ function App() {
     return (
       <div data-testid="app">
         <header>
-          <h1>React Gallery</h1>
+          <h1>My Gallery</h1>
         </header>
         <GalleryList />
         {/* <p>The gallery goes here!</p>
