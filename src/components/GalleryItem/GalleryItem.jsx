@@ -55,7 +55,7 @@ function GalleryItem( {item, fetchGallery} ) {
                     : <> yet.</>
                 }
             </p>
-            <button onClick={deleteItem}>Delete</button>
+            <button className="delete-button" onClick={deleteItem}>Delete</button>
         </div>
     );
 }
