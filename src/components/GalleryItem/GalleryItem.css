@@ -1,5 +1,5 @@
 .gallery-item {
-    height: 375px;
+    height: 400px;
     width: 200px;
     margin-left: 20px;
     margin-right: 20px;
@@ -31,10 +31,4 @@
 
 button {
     width: 50%;
-}
-
-.delete-button {
-    background-color: red;
-    color: white;
-    border: 1px solid black;
 }

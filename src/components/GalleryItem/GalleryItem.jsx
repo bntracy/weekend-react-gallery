@@ -1,5 +1,6 @@
 import axios from 'axios';
 import { useState } from "react";
+import Button from '@mui/material/Button';
 
 import './GalleryItem.css'
 
@@ -40,7 +41,7 @@ function GalleryItem( {item, fetchGallery} ) {
                     : <p data-testid="toggle" onClick={togglePic} className="description">{item.description}</p> }
             </div>
             <p className="title">{item.title}</p>
-            <button data-testid="like" onClick={likeItem}>Like</button>
+            <Button variant="contained" data-testid="like" onClick={likeItem}>Like</Button>
             <p>
                 { item.likes
                     ? <>{item.likes}</>
@@ -55,7 +56,7 @@ function GalleryItem( {item, fetchGallery} ) {
                     : <> yet.</>
                 }
             </p>
-            <button className="delete-button" onClick={deleteItem}>Delete</button>
+            <Button size="small" color="error" variant="outlined" onClick={deleteItem}>Delete</Button>
         </div>
     );
 }

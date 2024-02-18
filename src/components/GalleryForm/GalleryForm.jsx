@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import axios from 'axios';
-
+import Button from '@mui/material/Button';
 import './GalleryForm.css';
 
 function GalleryForm( {fetchGallery} ) {
@@ -45,7 +45,7 @@ function GalleryForm( {fetchGallery} ) {
                     <label htmlFor="description">Description:</label>
                     <input id="description" type="text" value={newDescription} onChange={(event) => setNewDescription(event.target.value)} required />
                 </p>
-                <button className="add-button" type="submit">Add</button>
+                <Button className="add-button" variant="contained" type="submit">Add</Button>
             </form>
         </div>
     );

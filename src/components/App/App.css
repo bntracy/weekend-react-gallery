@@ -1,11 +1,8 @@
 body {
     background-color: aliceblue;
+    font-family: Roboto, sans-serif;
 }
 
 header {
     text-align: center;
-}
-
-button {
-    box-shadow: 3px 3px 5px grey;
 }
