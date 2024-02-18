@@ -21,6 +21,17 @@ function GalleryItem( {item, fetchGallery} ) {
         });
     }
 
+    const deleteItem = () => {
+        axios({
+            method: 'DELETE',
+            url: `/api/gallery/${item.id}`
+        }).then(response => {
+            fetchGallery();
+        }).catch(error => {
+            console.log('Error deleting item', error);
+        });
+    }
+
     return (
         <div data-testid="galleryItem" className="gallery-item">
             <div className="item-content">
@@ -44,6 +55,7 @@ function GalleryItem( {item, fetchGallery} ) {
                     : <> yet.</>
                 }
             </p>
+            <button onClick={deleteItem}>Delete</button>
         </div>
     );
 }
