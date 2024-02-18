@@ -1,0 +1,13 @@
+input {
+    padding: 3px;
+    box-shadow: 3px 3px 5px grey;
+}
+
+label {
+    display: block;
+}
+
+.add-button {
+    width: 100%;
+    margin-top: 1rem;
+}
