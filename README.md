@@ -2,7 +2,7 @@
 
 ## Description
 
-A gallery of photos that can be "liked". A photo can be added by supplying the URL, title, and description.
+A gallery of photos that can be "liked". A photo can be added by supplying the URL, title, and description. A delete button lets the user delete photos.
 
 ### Prerequisites
 
