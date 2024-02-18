@@ -24,4 +24,14 @@ router.get('/', (req, res) => {
   });
 });
 
+router.post('/', (req, res) => {
+  const sqlText = 'INSERT INTO "gallery" ("url", "title", "description") VALUES ($1, $2, $3);';
+  pool.query(sqlText, [req.body.url, req.body.title, req.body.description]).then(dbResult => {
+    res.sendStatus(201);
+  }).catch(dbError => {
+    console.log('Error putting data in database', dbError);
+    res.sendStatus(500);
+  });
+});
+
 module.exports = router;
